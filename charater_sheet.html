@@ -1,371 +1,468 @@
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
-<!-- Required meta tags --> 
-<meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
-<!-- Bootstrap CSS --> 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
-<style>
-.table > thead > tr > th:first-child {
-width: 100px;
-}
-</style>
+  <!-- Required meta tags --> 
+  <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <!-- Bootstrap CSS --> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anoymous">
+  <style>
+  body {
+    padding-bottom: 70px;
+  }
+  .table-num > thead > tr > th:first-child,
+  .table-num > tbody > tr > td:first-child {
+    width: 100px;
+    text-align: center;
+  }
+  .table-lists > thead > tr > th,
+  .table-lists > tbody > tr > td {
+    text-align: center;
+  }
+  .io-nav {
+    font-size: 2rem;
+  }
+  </style>
 </head> 
 <body> 
-<div  class="container">
-<h1>Isabel Scully <small>Izzy</small></h1> 
 
-<h3>Points</h3>
+  <div class="tab-content">
+    <div class="tab-pane fade show active" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+      <h1 class="p-3 m-0 bg-dark text-white">Profile</h1>
+      <div class="p-3 mb-3 bg-primary text-white sticky-top">
+        <h3 class="p-0 m-0 d-inline">Isabel Scully <small>Izzy</small></h3>
+        <div class="d-inline float-right">
+          <span class="badge badge-light text-primary align-bottom">94/6</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-3">
+            <h3>Stats</h3>
+            <table  class="table table-striped table-sm table-num">
+              <caption>Power Reserve +2 Stats &amp; Powers</caption>
+              <thead  class="thead-inverse">
+                <tr>
+                  <th>APs</th>
+                  <th>Stats</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>5 (7)</td>
+                  <td>DEX</td>
+                </tr>
+                <tr>
+                  <td>7 (9)</td>
+                  <td>INT</td>
+                </tr>
+                <tr>
+                  <td>7 (9)</td>
+                  <td>INF</td>
+                </tr>
+                <tr>
+                  <td>3 (5)</td>
+                  <td>STR</td>
+                </tr>
+                <tr>
+                  <td>7 (9)</td>
+                  <td>WILL</td>
+                </tr>
+                <tr>
+                  <td>7 (9)</td>
+                  <td>AURA</td>
+                </tr>
+                <tr>
+                  <td>5 (32)</td>
+                  <td>BODY</td>
+                </tr>
+                <tr>
+                  <td>9 (11)</td>
+                  <td>MIND</td>
+                </tr>
+                <tr>
+                  <td>9 (11)</td>
+                  <td>SPIRIT</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!-- /.col -->
 
-<ul>
-<li>Hero 94</li>
-<li>Comedy 6</li>
-</ul>
+          <div class="col-xs-12 col-lg-3">
+            <h3>Skills</h3>
+            <table  class="table table-striped table-sm table-num">
+              <thead  class="thead-inverse">
+                <tr>
+                  <th>APs</th>
+                  <th>Skills</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>9</td>
+                  <td>Theif (all)</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Hacker</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Martial Arts</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Detective</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Climb</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>Disguise</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Escape Artist</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Speed Read</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Card Tricks</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Slight of Hand</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Forgery</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Behavioral Psychology</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Acrobatics</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Interrogation</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Intimidation</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Pistol</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Demolitions</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Tracking</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Seduction</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Artist Actor</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="table table-striped table-sm table-lists">
+              <thead class="thead-inverse">
+                <tr>
+                  <th>Advantages</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Lightning Reflexes</td>
+                </tr>
+                <tr>
+                  <td>Sharp Eye</td>
+                </tR>
+                <tr>
+                  <td>Sharp Ear</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!-- /.col -->
 
-<h3>Combat</h3>
+          <div class="col-xs-12 col-lg-6">
+            <h3>Powers</h3>
+            <div class="row">
+              <div class="col-xs-12 col-lg-6">
+                <table  class="table table-striped table-sm table-num">
+                  <caption>Power Reserve +2 Stats &amp; Powers</caption>
+                  <thead  class="thead-inverse">
+                    <tr>
+                      <th>APs</th>
+                      <th>Powers</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>3 (5)</td>
+                      <td>Super Speed</td>
+                    </tr>
+                    <tr>
+                      <td>15 (17)</td>
+                      <td>Sealed Systems</td>
+                    </tr>
+                    <tr>
+                      <td>1 (3)</td>
+                      <td>Regen</td>
+                    </tr>
+                    <tr>
+                      <td>1 (3)</td>
+                      <td>Jump</td>
+                    </tr>
+                    <tr>
+                      <td>15 (17)</td>
+                      <td>Invulnerable</td>
+                    </tr>
+                    <tr>
+                      <td>3 (5)</td>
+                      <td>Mind Over Matter</td>
+                    </tr>
+                    <tr>
+                      <td>7 (9)</td>
+                      <td>Recall</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> <!-- /.col -->
 
-<ul>
-<li>Innitiative (26 + D10)</li>
-</ul>
+              <div class="col-xs-12 col-lg-6">
+                <table  class="table table-striped table-sm table-num">
+                  <caption>Power Reserve +25 (see underlined for max)</caption>
+                  <thead  class="thead-inverse">
+                    <tr>
+                      <th>APs</th>
+                      <th>Powers (9)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0 - 7</td>
+                      <td>Tellekinisis (control)</td>
+                    </tr>
+                    <tr>
+                      <td>0 - 3</td>
+                      <td>Cling</td>
+                    </tr>
+                    <tr>
+                      <td>0 - 1</td>
+                      <td>Fly</td>
+                    </tr>
+                    <tr>
+                      <td>0 - 1</td>
+                      <td>Force Shield</td>
+                    </tr>
+                    <tr>
+                      <td>0 - 25</td>
+                      <td>Body</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> <!-- /.col -->
+            </div> <!-- /.row -->
+          </div> <!-- /.col -->
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div> <!-- /.tab-pane -->
 
-<h3>Stats</h3>
+    <div class="tab-pane fade" id="nav-inventory" role="tabpanel" aria-labelledby="nav-inventory-tab">
+      <h1 class="p-3 m-0 bg-dark text-white">Inventory</h1>
+      <h3 class="p-3 mb-3 bg-primary text-white sticky-top">$2000 USD</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-lg-4">
+            <table class="table table-striped table-sm table-num">
+              <thead class="thead-inverse">
+                <tr>
+                  <th>Qty</th>
+                  <th>Items</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</th>
+                  <td>Crystal Egg (hold hands)</td>
+                </tr>
+                <tr>
+                  <td>1</th>
+                    <td>Puck</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>MLF phone # (cycles daily)</td>
+                </tr>
+                <tr>
+                  <td>98%</td>
+                  <td>Partially Constructed Arc Reactor</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Pepper Pots Code</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Diamond Studded Dog Collar ($12,000)</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Various Herbs</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!-- /.col -->
 
-<table  class="table table-striped table-sm">
-<caption>Power Reserve +2 Stats & Power</caption>
-<thead  class="thead-inverse">
-<tr>
-<th class="text-center">APs</th>
-<th>Stats</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="text-center">5</td>
-<td>DEX</td>
-</tr>
-<tr>
-<td class="text-center">7</td>
-<td>INT</td>
-</tr>
-<tr>
-<td class="text-center">7</td>
-<td>INF</td>
-</tr>
-<tr>
-<td class="text-center">3</td>
-<td>STR</td>
-</tr>
-<tr>
-<td class="text-center">7</td>
-<td>WILL</td>
-</tr>
-<tr>
-<td class="text-center">7</td>
-<td>AURA</td>
-</tr>
-<tr>
-<td class="text-center">5 (32)</td>
-<td>BODY</td>
-</tr>
-<tr>
-<td class="text-center">9</td>
-<td>MIND</td>
-</tr>
-<tr>
-<td class="text-center">9</td>
-<td>SPIRIT</td>
-</tr>
-</tbody>
-</table>
+          <div class="col-xs-12 col-lg-8">
+            <table class="table table-striped table-sm">
+              <thead class="thead-inverse">
+                <tr>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>MROTS to stop Sahra cthulhu</td>
+                </tr>
+                <tr>
+                  <td>Harley freezes up with mention of tentacles</td>
+                </tr>
+                <tr>
+                  <td>Dill pickle cream cheese and bagles for Harley Q</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!-- /.col -->
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div> <!-- /.tab-pane -->
 
-<h3>Skills</h3>
+    <div class="tab-pane fade" id="nav-combat" role="tabpanel" aria-labelledby="nav-combat-tab">
+      <h1 class="p-3 m-0 bg-dark text-white">Combat</h1>
+      <h3 class="p-3 mb-3 bg-primary text-white sticky-top">Innitiative (26 (28) + D10)</h3>
+      <div class="container">
+        <h3>Probablities</h3>
 
-<table  class="table table-striped table-sm">
-<thead  class="thead-inverse">
-<tr>
-<th class="text-center">APs</th>
-<th>Skills</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="text-center">9</td>
-<td>Theif (all)</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Hacker</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Martial Arts</td>
-</tr>
-<tr>
-<td class="text-center">3</td>
-<td>Detective</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Climb</td>
-</tr>
-<tr>
-<td class="text-center">7</td>
-<td>Disguise</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Escape Artist</td>
-</tr>
-<tr>
-<td class="text-center">3</td>
-<td>Speed Read</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Card Tricks</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Slight of Hand</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Forgery</td>
-</tr>
-<tr>
-<td class="text-center">3</td>
-<td>Behavioral Psychology</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Acrobatics</td>
-</tr>
-<tr>
-<td class="text-center">3</td>
-<td>Interrogation</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Intimidation</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Pistol</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Demolitions</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Tracking</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Seduction</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>Artist Actor</td>
-</tr>
-</tbody>
-</table>
+        <p>1% chance of rolling doubles</p>
 
-<h3>Powers</h3>
+        <div class="row">
+          <div class="col-xs-12 col-lg-3">
+            <table class="table table-striped table-sm table-num">
+              <caption>2 D10 - rolling at least
+              <thead class="thead-inverse">
+                <tr>
+                  <th>Rolls</th>
+                  <th>Probabilities</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2</td>
+                  <td>100%</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>99%</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>97%</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>94%</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>90%</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>85%</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>79%</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>72%</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>64%</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>55%</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>45%</td>
+                </tr>
+                <tr>
+                  <td>13</td>
+                  <td>36%</td>
+                </tr>
+                <tr>
+                  <td>14</td>
+                  <td>28%</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>21%</td>
+                </tr>
+                <tr>
+                  <td>16</td>
+                  <td>15%</td>
+                </tr>
+                <tr>
+                  <td>17</td>
+                  <td>10%</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>6%</td>
+                </tr>
+                <tr>
+                  <td>19</td>
+                  <td>3%</td>
+                </tr>
+                <tr>
+                  <td>20</td>
+                  <td>1%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div> <!-- /.col -->
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+    </div> <!-- /.tab-pane -->
+  </div> <!-- /.tab-content -->
 
-<table  class="table table-striped table-sm">
-<caption>Power Reserve +2 Stats & Power</caption>
-<thead  class="thead-inverse">
-<tr>
-<th class="text-center">APs</th>
-<th>Powers</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="text-center">3</td>
-<td>Super Speed</td>
-</tr>
-<tr>
-<td class="text-center">15</td>
-<td>Sealed Systems</td>
-</tr>
-<tr>
-<td class="text-center">1</td>
-<td>Regen</td>
-</tr>
-<tr>
-<td class="text-center">1</td>
-<td>Jump</td>
-</tr>
-<tr>
-<td class="text-center">15</td>
-<td>Invulnerable</td>
-</tr>
-<tr>
-<td class="text-center">3</td>
-<td>Mind Over Matter</td>
-</tr>
-<tr>
-<td class="text-center">7</td>
-<td>Recall</td>
-</tr>
-</tbody>
-</table>
+<nav class="nav navbar-dark bg-dark nav-justified fixed-bottom" class="tablist">
+  <a class="py-3 nav-item nav-link active" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-expanded="true"><span class="oi oi-clipboard io-nav" title="profile" aria-hidden="true"></span></a>
+  <a class="py-3 nav-item nav-link" data-toggle="tab" href="#nav-inventory" role="tab" aria-controls="nav-inventory"><span class="oi oi-box io-nav" title="inventory" aria-hidden="true"></span></a>
+  <a class="py-3 nav-item nav-link" data-toggle="tab" href="#nav-combat" role="tab" aria-controls="nav-combat"><span class="oi oi-calculator io-nav" title="combat" aria-hidden="true"></span></a>
+</nav>
 
-<table  class="table table-striped table-sm">
-<caption>Power Reserve +25 (see underlined for max)</caption>
-<thead  class="thead-inverse">
-<tr>
-<th class="text-center">APs</th>
-<th>Powers (9)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="text-center">0 - 7</td>
-<td>Tellekinisis (control)</td>
-</tr>
-<tr>
-<td class="text-center">0 - 3</td>
-<td>Cling</td>
-</tr>
-<tr>
-<td class="text-center">0 - 1</td>
-<td>Fly</td>
-</tr>
-<tr>
-<td class="text-center">0 - 1</td>
-<td>Force Shield</td>
-</tr>
-<tr>
-<td class="text-center">0 - 25+</td>
-<td>Body</td>
-</tr>
-</tbody>
-</table>
-
-<h3>Advantages</h3>
-
-<ul>
-<li>Lightning Reflexes</li>
-<li>Sharp Eye/Ear</li>
-</ul>
-
-<h3>Inventory</h3>
-
-<ul>
-<li>Crystal Egg (hold hands)</li>
-<li>Puck</li>
-<li>MLF phone #</li>
-<li>Partially constructed Arc Reactor</li>
-<li>Pepper Pots Code</li>
-<li>Diamond Studded Dog Collar ($12,000)</li>
-<li>$2000</li>
-</ul>
-
-<h3>Notes</h3>
-
-<ul>
-<li>MROTS to stop Sahra cthulhu</li>
-<li>Harley freezes up with mention of tentacles</li>
-<li>Eggs do not work on IT</li>
-<li>Dill pickle cream cheese and bagles for Harley Q</li>
-</ul>
-
-<h3>Probablities</h3>
-
-<p>1% chance of rolling doubles</p>
-
-<table class="table table-striped table-sm">
-<caption>2 D10 - at least
-<thead class="thead-inverse">
-<tr>
-<th class="text-center">Rolls</th>
-<th>Probabilities</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="text-center">2</td>
-<td>100%</td>
-</tr>
-<tr>
-<td class="text-center">3</td>
-<td>99%</td>
-</tr>
-<tr>
-<td class="text-center">4</td>
-<td>97%</td>
-</tr>
-<tr>
-<td class="text-center">5</td>
-<td>94%</td>
-</tr>
-<tr>
-<td class="text-center">6</td>
-<td>90%</td>
-</tr>
-<tr>
-<td class="text-center">7</td>
-<td>85%</td>
-</tr>
-<tr>
-<td class="text-center">8</td>
-<td>79%</td>
-</tr>
-<tr>
-<td class="text-center">9</td>
-<td>72%</td>
-</tr>
-<tr>
-<td class="text-center">10</td>
-<td>64%</td>
-</tr>
-<tr>
-<td class="text-center">11</td>
-<td>55%</td>
-</tr>
-<tr>
-<td class="text-center">12</td>
-<td>45%</td>
-</tr>
-<tr>
-<td class="text-center">13</td>
-<td>36%</td>
-</tr>
-<tr>
-<td class="text-center">14</td>
-<td>28%</td>
-</tr>
-<tr>
-<td class="text-center">15</td>
-<td>21%</td>
-</tr>
-<tr>
-<td class="text-center">16</td>
-<td>15%</td>
-</tr>
-<tr>
-<td class="text-center">17</td>
-<td>10%</td>
-</tr>
-<tr>
-<td class="text-center">18</td>
-<td>6%</td>
-</tr>
-<tr>
-<td class="text-center">19</td>
-<td>3%</td>
-</tr>
-<tr>
-<td class="text-center">20</td>
-<td>1%</td>
-</tr>
-</tbody>
-</table>
-
-</div>
 <!-- Optional JavaScript --> 
 <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> 
